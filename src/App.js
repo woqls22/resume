@@ -12,6 +12,7 @@ function App() {
       <div className="Summary">
         <strong>FullStack Developer</strong>
         <br />
+        
         <strong>LeeJaeBeen</strong>
         <br />
         Email &nbsp; :&nbsp; woqls226@gmail.com <br />
