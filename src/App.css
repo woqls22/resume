@@ -1,45 +1,124 @@
-.TopImg{
-  /* background-image: url('./resources/45088482.jpg'); */
+.TopImg {
+  background-image: url('https://images.pexels.com/photos/2117938/pexels-photo-2117938.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'); 
   background-repeat: no-repeat;
-  background-attachment : local;
-  background-position: right right;
+  background-attachment: local;
+  background-size:auto;
+  background-position: left left;
   height: 100%;
   padding: 11rem 4rem;
   padding-right: auto;
   padding-left: auto;
-  background-color:gray;
+  text-align: center;
 }
-.Summary{
+.Topbg {
+  background: #bdc3c7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #757f9a,
+    #d7dde8
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #757f9a,
+    #d7dde8
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.ProjectCell2 {
+  display: flex;
+  height: 650px;
+  padding-right: auto;
+  padding-left: 4.5rem;
+  background: -webkit-linear-gradient(
+    to top,
+    #d8d8d8,
+    #d8d8d8
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #d8d8d8,
+    #d8d8d8
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin-left: auto;
+}
+.ProjectPaper {
+  width: 20rem;
+  height: 20rem;
+  margin: 1rem;
+  background-color: rgb(255, 255, 255);
+}
+.Summary {
   padding: 0.5rem;
   margin-right: auto;
   padding-left: 70%;
-  background-color:rgb(163, 161, 161);
-  color:rgb(54, 53, 53);
+  background-color: rgb(194, 191, 191);
+  color: rgb(54, 53, 53);
   font-size: 1.3rem;
 }
-.TopTitle{
+.TopTitle {
   letter-spacing: -0.05em;
   font-size: 3.25rem;
   font-weight: 100;
   padding-left: 14rem;
   padding-left: 30rem;
-  text-shadow: 0 1px 0 rgb(100, 98, 98), 0 6px 1px rgb(0 0 0 / 10%), 0 0 5px rgb(0 0 0 / 10%), 0 1px 3px rgb(0 0 0 / 30%), 0 3px 5px rgb(0 0 0 / 20%), 0 5px 10px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 20%), 0 20px 20px rgb(0 0 0 / 15%);
+  text-shadow: 0 1px 0 rgb(100, 98, 98), 0 6px 1px rgb(0 0 0 / 10%),
+    0 0 5px rgb(0 0 0 / 10%), 0 1px 3px rgb(0 0 0 / 30%),
+    0 3px 5px rgb(0 0 0 / 20%), 0 5px 10px rgb(0 0 0 / 25%),
+    0 10px 10px rgb(0 0 0 / 20%), 0 20px 20px rgb(0 0 0 / 15%);
   color: #ffffff;
 }
-.Navigation{
+.Navigation {
   position: sticky;
-    z-index: 10;
-    top: 0;
-    padding-left: 1.875rem;
-    padding-right: 1.875rem;
-    font-size: 0.9rem;
-    font-weight: 700;
-    letter-spacing: 0;
-    height: 2.5rem;
-    background-color: rgba(128, 125, 125, 0.712);
-    padding-top: 0.3125rem;
-    padding-bottom: 0.3125rem;
-    font-size: 2.25rem;
-    white-space: nowrap;
-    color:rgb(47, 65, 59)
+  z-index: 10;
+  top: 0;
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  background-color: #1a1b1b;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  font-size: 2.25rem;
+  white-space: nowrap;
+  color: #ffffff;
+}
+.ProjectCell1{
+  display: flex;
+  height: 220px;
+  padding-left:5.5rem;
+  background: -webkit-linear-gradient(
+    to top,
+    #d8d8d8,
+    #999a9b
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #d8d8d8,
+    #999a9b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin-left: auto;
+}
+.ProjectCell3{
+  height: 1900px;
+  padding-left:5.5rem;
+  background: -webkit-linear-gradient(
+    to bottom,
+    #d8d8d8,
+    #d8d8d8
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #d8d8d8,
+    #d8d8d8
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin-left: auto;
+}
+.projectTitle{
+  background: linear-gradient( to bottom, #d8d8d8, #d8d8d8 );
+  padding-left:5.5rem;
+}
+.summaryTitle{
+  background: linear-gradient( to bottom, #999a9b, #999a9b );
+  padding-top: 1rem;
+  padding-left:5.5rem;
 }
