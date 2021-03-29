@@ -12,7 +12,8 @@ import {
 } from "@material-ui/core";
 import ProjectCard from "./card";
 import StackCard from "./StackCard";
-import DocumentSlider from "./DocumentSlider"
+import DocumentSlider from "./DocumentSlider";
+import profilePic from "../src/resources/45088482.png";
 function App() {
   const scrollToSummary = (event) => {
     window.scrollTo({
@@ -115,26 +116,32 @@ function App() {
             marginLeft: "3rem",
           }}
         >
-          <h3>Full Stack Developer</h3>
-          <Typography variant="h6">
-            <strong>LEE JAE BEEN</strong>
-            <br />
-          </Typography>
-          <Typography variant="subtitle1">
+          <h2 style={{ marginLeft:"7.1rem"}}>LEE JAE BEEN</h2>
+          <div style={{display:"flex", }}>
+          <div>
+          <img  style={{ marginTop:"-4rem", marginLeft:"-2rem"}} src = {profilePic} height="170rem"/>
+          </div>
+          <div style={{marginLeft:"2rem", marginTop:"-0.3rem"}}>
+          <Typography variant="subtitle0" >
             {" "}
             Email &nbsp; :&nbsp; woqls226@gmail.com &nbsp;
             <br />
+            <br />
           </Typography>
-          <Typography variant="subtitle1">
+          <Typography variant="subtitle0">
             {" "}
             Phone &nbsp; :&nbsp; +82)01039041931 &nbsp;
             <br />
+            <br />
           </Typography>
-          <Typography variant="subtitle1">
+          <Typography variant="subtitle0">
             {" "}
             Github &nbsp; :&nbsp; https://github.com/woqls22 &nbsp;
             <br />
           </Typography>
+          </div>
+          </div>
+         
         </Paper>
         <Paper
           elevation={3}
@@ -167,7 +174,7 @@ function App() {
         <Paper
           elevation={3}
           style={{
-            paddingRight: "1rem",
+            paddingRight: "3rem",
             paddingLeft: "3rem",
             marginTop: "1rem",
             marginBottom: "1rem",
@@ -176,7 +183,7 @@ function App() {
           <h2>Introduce</h2>
           <Typography variant="button">
             요구사항 분석, 설계, 평가까지의 복잡한 프로세스를 거쳐 만든
-            프로그램이 많은 사람들에게 큰 호응을 얻을 때,
+            프로그램이 많은 <br />사람들에게 큰 호응을 얻을 때,
             <br />
             저는 그 어떤 일보다 깊은 의미를 찾을 수 있다고 생각합니다. <br />
           </Typography>
@@ -400,7 +407,7 @@ function App() {
           <div className="ProjectPaper">
             <StackCard
               link={
-                "https://lh3.googleusercontent.com/proxy/1McnDatPhzwgym5qaMICWFqyw-_zdUTKLGPm9R8Z9gBtr3t1cWD-_9MQ35PhbvfiYKaQPneYWSyzCZbO_1UEpXGBJFhiT1GaqhM09TrcWyW266kKRxcGj25ZtaBZBJhx0mUjgEVTBkyD7HAFE230wgfYFyrGCyEyHw0r6vHLWg"
+                "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F9954F3355BBF0F0724"
               }
               projectTitle={"Oracle"}
               period={"1년"}
