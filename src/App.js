@@ -360,8 +360,7 @@ function App() {
               info={[
                 "인터페이스, 추상클래스등의 개념을 이해하고 있으며, 자바 메모리구조를 이해하고 있습니다.",
                 <br />,
-                <br />,
-                "스프링 프레임워크에서의 싱글톤패턴을 바탕으로 구조적 개발을 할 수 있습니다.",
+                "스프링 프레임워크에서 JDBC, JPA를 통한 RDBMS기반의 웹개발(API시스템 개발)을 할 수 있습니다.",
               ]}
             />
           </div>
@@ -412,7 +411,7 @@ function App() {
               projectTitle={"Oracle"}
               period={"1년"}
               info={[
-                "관계형 데이터베이스 모델을 설계하고 구축할 수 있습니다. ",
+                "RDB 데이터베이스 스키마 설계를 할 수",
                 <br />,
                 "데이터베이스에서 발생하는 여러 메타데이터를 다룰 수 있으며, 자바를 연동하여 API개발을 할 수 있습니다.",
               ]}
@@ -430,8 +429,35 @@ function App() {
               info={[
                 "개인정보 비식별 조치 오픈소스인 ARX를 활용할 수 있습니다.",
                 <br />,
-                <br />,
                 "속성정보에 따른 레코드 취약성을 검증할 수 있으며, 준식별자 조합에 대한 위험도를 측정하고 최적 솔루션을 제공할 수 있습니다.",
+              ]}
+            />
+          </div>
+          <div className="ProjectPaper">
+            <StackCard
+              link={
+                "https://t1.daumcdn.net/cfile/tistory/999399465F5084760F"
+              }
+              projectTitle={"JavaScript"}
+              period={"1년"}
+              info={[
+                "ES6문법에 대해 이해하고 있으며 Promise객체에 대한 이해를 바탕으로 비동기 콜백문제를 해결할 수 있습니다",
+                <br />,
+                "",
+              ]}
+            />
+          </div>
+          <div className="ProjectPaper">
+            <StackCard
+              link={
+                "https://blog.kakaocdn.net/dn/6jJIy/btqD1qtPjLY/D0M6XwD68qoqr4ckIixb5k/img.png"
+              }
+              projectTitle={"Elastic Search"}
+              period={"1년"}
+              info={[
+                "Elastic Search의 InvertedIndex Based 동작원리를 이해하고 있으며 RDBMS와의 차이점을 이해하고있습니다.",
+                <br />,
+                "Elastic Search를 기반으로 Json기반의 쿼리 조회 API를 작성할 수 있습니다.",
               ]}
             />
           </div>
