@@ -8,7 +8,7 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles({
   root: {
     minWidth: 275,
-    minHeight:580
+    minHeight:550
   },
   bullet: {
     display: 'inline-block',
@@ -45,7 +45,7 @@ export default function ProjectCard(props) {
           기술 스택 : {props.stack}
         </Typography>
         <br/>
-        <Typography variant="body2" component="p">
+        <Typography variant="body2" component="p" style={{marginBottom:"-1rem"}}>
           {props.info}
         </Typography>
       </CardContent>

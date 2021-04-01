@@ -23,19 +23,19 @@ function App() {
   };
   const scrollToProject = (event) => {
     window.scrollTo({
-      top: 681,
+      top: 670,
       behavior: "smooth",
     });
   };
   const scrollToAwards = (event) => {
     window.scrollTo({
-      top: 1370,
+      top: 1360,
       behavior: "smooth",
     });
   };
   const scrollToStacks = (event) => {
     window.scrollTo({
-      top: 1582,
+      top: 1572,
       behavior: "smooth",
     });
   };
@@ -52,7 +52,9 @@ function App() {
       <div className="Topbg">
         <div className="TopImg">
           <div className="TopTitle">
+          <div >
             개발자 &nbsp;<strong>이재빈</strong> 입니다
+          </div>
           </div>
         </div>
       </div>
@@ -90,15 +92,6 @@ function App() {
           </Button>
         </div>
       </div>
-      {/* <div className="Summary">
-        <strong>FullStack Developer</strong>
-        <br />
-        <strong>LeeJaeBeen</strong>
-        <br />
-        Email &nbsp; :&nbsp; woqls226@gmail.com <br />
-        Phone &nbsp; :&nbsp; +82)01039041931 <br />
-        Github &nbsp; :&nbsp; https://github.com/woqls22 <br />
-      </div> */}
       <div className="summaryTitle">
       <Typography variant="h4">
           <strong>SUMMARY</strong>
@@ -146,7 +139,7 @@ function App() {
         <Paper
           elevation={3}
           style={{
-            paddingRight: "5rem",
+            paddingRight: "3rem",
             paddingLeft: "3rem",
             marginTop: "1rem",
             marginBottom: "1rem",
@@ -163,11 +156,11 @@ function App() {
             <br />
           </Typography>
           <Typography variant="button">
-            &nbsp;NuRhyme Games 인턴십 진행(2020.06~2020.08)
+            &nbsp;빅데이터 플랫폼 하이퍼데이터 내 개인정보 비식별화 모듈 기획, 개발
             <br />
           </Typography>
           <Typography variant="button">
-            &nbsp;경희대학교 KISES 공학교육 수료(2018.08)
+            &nbsp;하이퍼데이터 마스터 데이터 매니지먼트 기획, 개발
             <br />
           </Typography>
         </Paper>
@@ -212,8 +205,7 @@ function App() {
             info={[
               "티맥스의 제품인 하이퍼데이터 내 비식별 조치 모듈의 기획 및 연구개발을 진행했습니다.",
               <br />,
-              <br />,
-              "ARX 오픈소스를 활용하여 비식별 조치 결과에 대해서 위험도 분석 기능을 개발했습니다.",<br />,<br />,
+              "기획부터 서비스 구현, UI작업까지 모든 부분에 대해 개발을 진행했으며, ARX 오픈소스를 활용하여 조치이후 각 레코드조합에 따른  위험도 분석 기능을 개발했습니다."
             ]}
             contribute={"기획, 연구, 개발, 통합"}
             githubLink={"https://metaforeverything.tistory.com/6"}
@@ -411,9 +403,9 @@ function App() {
               projectTitle={"Oracle"}
               period={"1년"}
               info={[
-                "RDB 데이터베이스 스키마 설계를 할 수",
+                "DB 정규화, 인덱싱등의 기초 개념을 이해하고 있으며 RDB스키마를 설계할 수 있습니다.",
                 <br />,
-                "데이터베이스에서 발생하는 여러 메타데이터를 다룰 수 있으며, 자바를 연동하여 API개발을 할 수 있습니다.",
+                "쿼리를 사용하여 스키마를 직접 구현하며, JPA,JDBC를 연동하여 객체지향적 API를 개발 할 수 있습니다.",
               ]}
             />
           </div>
@@ -455,7 +447,7 @@ function App() {
               projectTitle={"Elastic Search"}
               period={"1년"}
               info={[
-                "Elastic Search의 InvertedIndex Based 동작원리를 이해하고 있으며 RDBMS와의 차이점을 이해하고있습니다.",
+                "Elastic Search의 Inverted Index Based 동작원리를 이해하고 있으며 RDBMS와의 차이점을 이해하고있습니다.",
                 <br />,
                 "Elastic Search를 기반으로 Json기반의 쿼리 조회 API를 작성할 수 있습니다.",
               ]}

@@ -19,7 +19,7 @@ const useStyles = makeStyles({
     fontSize: 14,
   },
   pos: {
-    marginBottom: 12,
+    marginBottom: 10,
   },
   borderRadius:25
 });
@@ -37,7 +37,6 @@ export default function StackCard(props) {
           <Typography className={classes.pos} color="textSecondary">
             사용 기간 : {props.period}
           </Typography>
-          <br/>
           <Typography variant="body2" component="p">
             {props.info}
           </Typography>
