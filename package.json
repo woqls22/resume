@@ -17,7 +17,8 @@
     "react-scroll-to-component": "^1.0.2",
     "react-slick": "^0.28.1",
     "slick-carousel": "^1.8.1",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "yarn": "^1.22.10"
   },
   "scripts": {
     "start": "react-scripts start",

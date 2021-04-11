@@ -129,7 +129,8 @@ function App() {
           </Typography>
           <Typography variant="subtitle0">
             {" "}
-            Github &nbsp; :&nbsp; https://github.com/woqls22 &nbsp;
+            <a href="https://github.com/woqls22">
+            Github &nbsp; :&nbsp; https://github.com/woqls22 &nbsp;</a>
             <br />
           </Typography>
           </div>
@@ -224,7 +225,7 @@ function App() {
               "뉴스 데이터를 분석하여 종목의 주가 상승 및 하락을 예측하는 웹서비스를 구현했습니다.",
               <br />,
               <br />,
-              " 백엔드 모듈, 뉴스데이터 크롤링 모듈 작성, 모듈 통합, 클라우드 서버 임포트 작업을 진행했습니다. ",
+              " 백엔드 모듈, 뉴스데이터 크롤링 모듈 작성, 예측모델 학습 및 구축, 모듈 통합, 클라우드 서버 임포트 작업을 진행했습니다. ",
             ]}
             contribute={"BackEnd,Integration"}
             githubLink={"https://github.com/woqls22/StockNews"}
@@ -362,9 +363,11 @@ function App() {
               projectTitle={"React"}
               period={"1년"}
               info={[
-                "MOBX 상태 관리를 하며 AXIOS를 주로 사용하여 API 요청을 구현할 수 있습니다.",
+                "MOBX 상태 관리를 하며 AXIOS를 사용하여 API 요청을 구현할 수 있습니다.",
                 <br />,
-                "대부분의 필요한 웹 컴포넌트를 개발할 수 있으며, 시각화 라이브러리 사용경험이 있습니다.",
+                "대부분의 필요한 웹 컴포넌트를 개발할 수 있습니다.",
+                <br/>,
+                "react-flow-renderer를 활용한 Flow 시각화 개발 경험이 있습니다.",
               ]}
             />
           </div>
