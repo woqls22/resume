@@ -29,32 +29,32 @@ function App() {
   };
   const scrollToAwards = (event) => {
     window.scrollTo({
-      top: 1360,
+      top: 1990,
       behavior: "smooth",
     });
   };
   const scrollToStacks = (event) => {
     window.scrollTo({
-      top: 1572,
+      top: 2200,
       behavior: "smooth",
     });
   };
   const scrollToDocument = (event) => {
     window.scrollTo({
-      top: 2349,
+      top: 3500,
       behavior: "smooth",
     });
     console.log("move to 0,0");
   };
-  
+
   return (
     <>
       <div className="Topbg">
         <div className="TopImg">
           <div className="TopTitle">
-          <div >
-            개발자 &nbsp;<strong>이재빈</strong> 입니다
-          </div>
+            <div>
+              개발자 &nbsp;<strong>이재빈</strong> 입니다
+            </div>
           </div>
         </div>
       </div>
@@ -93,7 +93,7 @@ function App() {
         </div>
       </div>
       <div className="summaryTitle">
-      <Typography variant="h4">
+        <Typography variant="h4">
           <strong>SUMMARY</strong>
         </Typography>
       </div>
@@ -109,33 +109,37 @@ function App() {
             marginLeft: "3rem",
           }}
         >
-          <h2 style={{ marginLeft:"7.1rem"}}>LEE JAE BEEN</h2>
-          <div style={{display:"flex", }}>
-          <div>
-          <img  style={{ marginTop:"-4rem", marginLeft:"-2rem"}} src = {profilePic} height="170rem"/>
+          <h2 style={{ marginLeft: "7.1rem" }}>LEE JAE BEEN</h2>
+          <div style={{ display: "flex" }}>
+            <div>
+              <img
+                style={{ marginTop: "-4rem", marginLeft: "-2rem" }}
+                src={profilePic}
+                height="170rem"
+              />
+            </div>
+            <div style={{ marginLeft: "2rem", marginTop: "-0.3rem" }}>
+              <Typography variant="subtitle0">
+                {" "}
+                Email &nbsp; :&nbsp; woqls226@gmail.com &nbsp;
+                <br />
+                <br />
+              </Typography>
+              <Typography variant="subtitle0">
+                {" "}
+                Phone &nbsp; :&nbsp; +82)01039041931 &nbsp;
+                <br />
+                <br />
+              </Typography>
+              <Typography variant="subtitle0">
+                {" "}
+                <a href="https://github.com/woqls22">
+                  Github &nbsp; :&nbsp; https://github.com/woqls22 &nbsp;
+                </a>
+                <br />
+              </Typography>
+            </div>
           </div>
-          <div style={{marginLeft:"2rem", marginTop:"-0.3rem"}}>
-          <Typography variant="subtitle0" >
-            {" "}
-            Email &nbsp; :&nbsp; woqls226@gmail.com &nbsp;
-            <br />
-            <br />
-          </Typography>
-          <Typography variant="subtitle0">
-            {" "}
-            Phone &nbsp; :&nbsp; +82)01039041931 &nbsp;
-            <br />
-            <br />
-          </Typography>
-          <Typography variant="subtitle0">
-            {" "}
-            <a href="https://github.com/woqls22">
-            Github &nbsp; :&nbsp; https://github.com/woqls22 &nbsp;</a>
-            <br />
-          </Typography>
-          </div>
-          </div>
-         
         </Paper>
         <Paper
           elevation={3}
@@ -157,7 +161,8 @@ function App() {
             <br />
           </Typography>
           <Typography variant="button">
-            &nbsp;빅데이터 플랫폼 하이퍼데이터 내 개인정보 비식별화 모듈 기획, 개발
+            &nbsp;빅데이터 플랫폼 하이퍼데이터 내 개인정보 비식별화 모듈 기획,
+            개발
             <br />
           </Typography>
           <Typography variant="button">
@@ -177,7 +182,8 @@ function App() {
           <h2>Introduce</h2>
           <Typography variant="button">
             요구사항 분석, 설계, 평가까지의 복잡한 프로세스를 거쳐 만든
-            프로그램이 많은 <br />사람들에게 큰 호응을 얻을 때,
+            프로그램이 많은 <br />
+            사람들에게 큰 호응을 얻을 때,
             <br />
             저는 그 어떤 일보다 깊은 의미를 찾을 수 있다고 생각합니다. <br />
           </Typography>
@@ -189,7 +195,7 @@ function App() {
         </Paper>
       </div>
       <div className="projectTitle">
-      <Typography variant="h4">
+        <Typography variant="h4">
           <strong>PROJECT</strong>
         </Typography>
       </div>
@@ -197,7 +203,7 @@ function App() {
         <div className="ProjectPaper">
           <ProjectCard
             link={
-              "data:image/jpeg;base64,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"
+              "https://blog.kakaocdn.net/dn/6xCfx/btq2s05l9Oh/7eV6JNkIdbZinR3eqYpGg0/img.png"
             }
             number={1}
             projectTitle={"개인정보 비식별 조치 모듈 개발"}
@@ -206,7 +212,7 @@ function App() {
             info={[
               "티맥스의 제품인 하이퍼데이터 내 비식별 조치 모듈의 기획 및 연구개발을 진행했습니다.",
               <br />,
-              "기획부터 서비스 구현, UI작업까지 모든 부분에 대해 개발을 진행했으며, ARX 오픈소스를 활용하여 조치이후 각 레코드조합에 따른  위험도 분석 기능을 개발했습니다."
+              "기획부터 서비스 구현, UI작업까지 모든 부분에 대해 개발을 진행했으며, ARX 오픈소스를 활용하여 조치이후 각 레코드조합에 따른  위험도 분석 기능을 개발했습니다.",
             ]}
             contribute={"기획, 연구, 개발, 통합"}
             githubLink={"https://metaforeverything.tistory.com/6"}
@@ -288,13 +294,32 @@ function App() {
               "차선인식모듈과 장애물인식모듈, HW제어 모듈을 구현하였습니다.",
             ]}
             contribute={"기획, 개발"}
-            githubLink={
-              "https://github.com/woqls22/Autonomus-Vehicle"
-            }
+            githubLink={"https://github.com/woqls22/Autonomus-Vehicle"}
           />
         </div>
       </div>
-
+      <div className="ProjectCell2">
+        <div className="ProjectPaper" style={{marginTop:"-2rem"}}>
+          <ProjectCard
+            link={
+             "https://blog.kakaocdn.net/dn/usdZM/btq2xb5TnPA/mz7kj58IANNsq2oF92kkz0/img.png"
+            }
+            number={1}
+            projectTitle={"Meta Management 개발"}
+            period={"2021.04.01~2021.07.01"}
+            stack={"TiberoDB, React.js, JAVA"}
+            info={[
+              "티맥스의 제품인 하이퍼데이터 내 MetaManagement모듈을 개발했습니다.",
+              <br />,
+              "React Flow Renderer를 기반으로 컬럼간관계에 대한 CRUD를 그래프형태로 구현하였으며, ",<br />,"DCAT표준에 맞춘 컬럼간 Categorization기능을 개발했습니다.",
+              <br />,
+              "또한 Tree구조를 도식화함과 동시에 사용자의 input에 따른 트리 만족조건을 자체적으로 판단할 수 있도록 로직을 작성하였습니다."
+            ]}
+            contribute={"기획, 연구, 개발"}
+            githubLink={""}
+          />
+        </div>
+      </div>
       <div className="ProjectCell3">
         <Typography variant="h4">
           <strong>AWARDS</strong>
@@ -366,7 +391,7 @@ function App() {
                 "MOBX 상태 관리를 하며 AXIOS를 사용하여 API 요청을 구현할 수 있습니다.",
                 <br />,
                 "대부분의 필요한 웹 컴포넌트를 개발할 수 있습니다.",
-                <br/>,
+                <br />,
                 "react-flow-renderer를 활용한 Flow 시각화 개발 경험이 있습니다.",
               ]}
             />
@@ -413,7 +438,7 @@ function App() {
             />
           </div>
         </div>
-        <div style={{ display: "flex", marginTop:"6rem" }}>
+        <div style={{ display: "flex", marginTop: "6rem" }}>
           <div className="ProjectPaper">
             <StackCard
               link={
@@ -430,9 +455,7 @@ function App() {
           </div>
           <div className="ProjectPaper">
             <StackCard
-              link={
-                "https://t1.daumcdn.net/cfile/tistory/999399465F5084760F"
-              }
+              link={"https://t1.daumcdn.net/cfile/tistory/999399465F5084760F"}
               projectTitle={"JavaScript"}
               period={"1년"}
               info={[
@@ -461,7 +484,7 @@ function App() {
           <strong>DOCUMENT</strong>
         </Typography>
         <div>
-          <DocumentSlider/>
+          <DocumentSlider />
         </div>
       </div>
     </>

@@ -5,6 +5,11 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import { useState } from "react";
+import { Dialog } from "@material-ui/core";
+import DialogTitle from "@material-ui/core/DialogTitle";
+import DialogContent from "@material-ui/core/DialogContent";
+import DialogActions from "@material-ui/core/DialogActions";
 const useStyles = makeStyles({
   root: {
     minWidth: 275,
@@ -25,10 +30,20 @@ const useStyles = makeStyles({
 });
 export default function ProjectCard(props) {
   const classes = useStyles();
+  const [imgDialogOpen,setImgDialogOpen]=useState(false);
+  const [imgLink,setImgLink]=useState("");
+  const openDialog=(link)=>{
+    setImgLink(props.link);
+    setImgDialogOpen(true);
+  }
+  const closeDialog=()=>{
+    setImgLink("");
+    setImgDialogOpen(false);
+  }
   return (
     <Card className={classes.root}>
         <div style={{textAlign:"center", marginTop:"4%"}}>
-        <img src={props.link} alt="project"  width="275" height="200"/>
+        <img src={props.link} alt="project"  width="275" height="200" onClick={()=>{openDialog(props.link)}}/>
         </div>
       <CardContent>
         <Typography  className={classes.title} color="textSecondary" gutterBottom>
@@ -54,6 +69,24 @@ export default function ProjectCard(props) {
         style={{marginLeft:"80%"}}
         size="small" href={props.githubLink}  target='_blank' ><strong>세부 정보</strong></Button>
       </CardActions>
+          <Dialog
+              open={imgDialogOpen}
+              onClose={closeDialog}
+              aria-labelledby="form-dialog-title"
+              maxWidth={false}
+            >
+              <DialogTitle id="form-dialog-title">
+                <strong>PROJECT IMG</strong>
+              </DialogTitle>
+              <DialogContent>
+                <div style={{ display: "flex", width: "100%" }}>
+                <img src={imgLink}  style={{ width: "100%" }}alt="project"/>
+                </div>
+              </DialogContent>
+              <DialogActions>
+                <Button onClick={closeDialog}>확인</Button>
+              </DialogActions>
+            </Dialog>
     </Card>
   );
 }
