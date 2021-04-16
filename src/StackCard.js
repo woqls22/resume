@@ -8,7 +8,7 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles({
   root: {
     minWidth: 275,
-    minHeight:430,
+    minHeight:370,
   },
   bullet: {
     display: 'inline-block',
@@ -27,17 +27,16 @@ export default function StackCard(props) {
     const classes = useStyles();
     return (
       <Card className={classes.root}>
-          <div style={{textAlign:"center", marginTop:"4%"}}>
-          <img src={props.link} alt="project"  width="275" height="200"/>
+          <div style={{textAlign:"center", marginTop:"4%", marginLeft:"0.5rem", marginRight:"0.5rem"}}>
+          <img src={props.link} alt="project"  width="280" height="170"/>
           </div>
         <CardContent>
-          <Typography >
            <strong>{props.projectTitle}</strong>
-          </Typography>
-          <Typography className={classes.pos} color="textSecondary">
+           <br/>
+          <Typography className={classes.pos} color="textSecondary" variant={"caption"}>
             사용 기간 : {props.period}
           </Typography>
-          <Typography variant="body2" component="p">
+          <Typography variant="caption" component="p">
             {props.info}
           </Typography>
         </CardContent>

@@ -1,14 +1,21 @@
 .TopImg {
-  background-image: url('https://images.pexels.com/photos/2117938/pexels-photo-2117938.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'); 
-  background-repeat: no-repeat;
+  /* background-image: url('https://images.pexels.com/photos/2117938/pexels-photo-2117938.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');  */
+  /* background-repeat: no-repeat;
   background-attachment: local;
   background-size:auto;
-  background-position: left left;
+  background-position: left left; */
   height: 100%;
   padding: 10rem 4rem;
   padding-right: auto;
   padding-left: auto;
   text-align: center;
+}
+#introduce{
+  background-image: url('https://images.pexels.com/photos/2117938/pexels-photo-2117938.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-size:auto;
+  background-position: left left;
 }
 .Topbg {
   background: #bdc3c7; /* fallback for old browsers */
@@ -22,23 +29,11 @@
     #757f9a,
     #d7dde8
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height:100%
 }
 .ProjectCell2 {
   display: flex;
   height: 650px;
-  padding-right: auto;
-  padding-left: 4.5rem;
-  background: -webkit-linear-gradient(
-    to top,
-    #d8d8d8,
-    #d8d8d8
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to top,
-    #d8d8d8,
-    #d8d8d8
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  margin-left: auto;
 }
 .ProjectPaper {
   width: 20rem;
@@ -50,21 +45,21 @@
   padding: 0.5rem;
   margin-right: auto;
   padding-left: 70%;
-  background-color: rgb(194, 191, 191);
   color: rgb(54, 53, 53);
   font-size: 1.3rem;
 }
 .TopTitle {
-  letter-spacing: -0.05em;
-  font-size: 3.25rem;
+  letter-spacing: 0.05em;
+  height: "10rem";
+  font-size: 4.25rem;
   font-weight: 100;
-  padding-left: 14rem;
-  padding-left: 30rem;
+  padding-left: 32rem;
   text-shadow: 0 1px 0 rgb(100, 98, 98), 0 6px 1px rgb(0 0 0 / 10%),
     0 0 5px rgb(0 0 0 / 10%), 0 1px 3px rgb(0 0 0 / 30%),
     0 3px 5px rgb(0 0 0 / 20%), 0 5px 10px rgb(0 0 0 / 25%),
     0 10px 10px rgb(0 0 0 / 20%), 0 20px 20px rgb(0 0 0 / 15%);
   color: #ffffff;
+  margin-top: -13rem;
 }
 .Navigation {
   position: sticky;
@@ -84,34 +79,14 @@
 }
 .ProjectCell1{
   display: flex;
-  height: 220px;
-  padding-left:5.5rem;
-  background: -webkit-linear-gradient(
-    to top,
-    #d8d8d8,
-    #999a9b
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to top,
-    #d8d8d8,
-    #999a9b
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  margin-left: auto;
+  /* padding-left:5.5rem; */
+  margin-top: -8rem;
+  float:center;
 }
 .ProjectCell3{
-  height: 1900px;
   padding-left:5.5rem;
-  background: -webkit-linear-gradient(
-    to bottom,
-    #d8d8d8,
-    #d8d8d8
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #d8d8d8,
-    #d8d8d8
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   margin-left: auto;
+  padding-top: -10rem;
 }
 .projectTitle{
   background: linear-gradient( to bottom, #d8d8d8, #d8d8d8 );
@@ -122,3 +97,22 @@
   padding-top: 1rem;
   padding-left:5.5rem;
 }
+.videobg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  overflow: hidden;
+}
+#background-video{
+  height: 100%;
+  width: 100%;
+  float: left;
+  top: 0;
+  padding: none;
+  position: fixed; /* optional depending on what you want to do in your app */
+  }

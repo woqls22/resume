@@ -10,10 +10,12 @@ import { Dialog } from "@material-ui/core";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogActions from "@material-ui/core/DialogActions";
+
 const useStyles = makeStyles({
   root: {
     minWidth: 275,
-    minHeight:566
+    minHeight:566,
+    marginTop:"-3rem"
   },
   bullet: {
     display: 'inline-block',
@@ -21,7 +23,8 @@ const useStyles = makeStyles({
     transform: 'scale(0.6)',
   },
   title: {
-    fontSize: 14,
+    marginTop:"-1rem",
+    fontSize: 9,
   },
   pos: {
     marginBottom: 12,
@@ -42,12 +45,12 @@ export default function ProjectCard(props) {
   }
   return (
     <Card className={classes.root}>
-        <div style={{textAlign:"center", marginTop:"4%"}}>
+        <div style={{textAlign:"center", marginTop:"4%", marginLeft:"0.5rem", marginRight:"0.5rem"}}>
         <img src={props.link} alt="project"  width="275" height="200" onClick={()=>{openDialog(props.link)}}/>
         </div>
       <CardContent>
         <Typography  className={classes.title} color="textSecondary" gutterBottom>
-          프로젝트{props.number}
+          프로젝트{props.number} <br/> 이미지를 클릭하시면 확대해서 보실 수 있습니다.
         </Typography>
         <Typography >
          <strong>{props.projectTitle}</strong>

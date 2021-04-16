@@ -33,7 +33,7 @@ export default function DocumentSlider(props)
 function Item(props)
 {
     return (
-        <div style={{marginLeft:"500px", marginRight:"100rem"}}>
+        <div style={{marginLeft:"24rem", marginRight:"100rem", marginTop:"3rem"}}>
          <Paper>
             <img  src = {props.url}  alt="project" height="500px" width="800px" />
         </Paper>
