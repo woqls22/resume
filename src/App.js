@@ -77,7 +77,7 @@ function App() {
             </video> */}
                 <Section1 />
               </div>
-              <div className="section" style={{width:"98%"}}>
+              <div className="section" style={{width:"98%", display:"flex"}}>
                 <Projects />
               </div>
               <div className="section">

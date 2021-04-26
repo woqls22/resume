@@ -13,6 +13,7 @@ export default function Stacks() {
           textAlign: "left",
           marginLeft: "5.5rem",
           color: "#FFFFFF",
+          marginTop:"-4rem"
         }}
         variant="h4"
       >
@@ -113,6 +114,20 @@ export default function Stacks() {
               "Elastic Search의 Inverted Index Based 동작원리를 이해하고 있으며 RDBMS와의 차이점을 이해하고있습니다.",
               <br />,
               "Elastic Search를 기반으로 Json기반의 쿼리 조회 API를 작성할 수 있습니다.",
+            ]}
+          />
+        </div>
+        <div className="ProjectPaper">
+          <StackCard
+            link={
+              "https://www.w3.org/TR/vocab-dcat-2/images/DCAT-relationships.png"
+            }
+            projectTitle={"DCAT"}
+            period={"1년"}
+            info={[
+              "데이터 카탈로그간 RDF표준인 DCAT문법을 이해하고, 핸들링 할 수 있습니다.",
+              <br />,
+              "JSON, XML을 통해 DCAT을 Import & Export한 경험이 있으며, 이를 바탕으로 데이터 검색 시 카탈로그간의 메타데이터를 활용하여 검색가능성을 높일 수 있습니다.",
             ]}
           />
         </div>
