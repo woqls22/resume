@@ -54,42 +54,9 @@ function App() {
     });
     console.log("move to 0,0");
   };
+  const anchors = ["Summary", "Projects", "Stacks","Awards","Document"];
   return (
     <>
-      {/* <div className="Navigation">
-        <div style={{ width: "30%", display: "flex" }}>
-          <Button
-            onClick={scrollToSummary}
-            style={{ color: "#FFFFFF", marginRight: "2rem" }}
-          >
-            SUMMARY
-          </Button>
-          <Button
-            onClick={scrollToProject}
-            style={{ color: "#FFFFFF", marginRight: "2rem" }}
-          >
-            PROJECT
-          </Button>
-          <Button
-            onClick={scrollToAwards}
-            style={{ color: "#FFFFFF", marginRight: "2rem" }}
-          >
-            AWARDS
-          </Button>
-          <Button
-            onClick={scrollToStacks}
-            style={{ color: "#FFFFFF", marginRight: "2rem" }}
-          >
-            STACKS
-          </Button>
-          <Button
-            onClick={scrollToDocument}
-            style={{ color: "#FFFFFF", marginRight: "2rem" }}
-          >
-            DOCUMENT
-          </Button>
-        </div>
-      </div> */}
       <ReactFullpage
         sectionsColor={[
           "rgb(0,0,0,0)",
@@ -98,23 +65,26 @@ function App() {
           "#171616",
           "#171616",
         ]}
+        anchors={anchors}
+        navigation
+        navigationTooltips={anchors}
         render={({ state, fullpageApi }) => {
           return (
-            <div id="fullpage-wrapper">
+            <div id="fullpage-wrapper" style={{backgroundColor:"#171616"}}>
               <div className="section section1" id="introduce">
                 {/* <video  autoPlay={true} loop={true} muted={true} playsInline={true}>
               <source src={videobg1} type="video/mp4"/>
             </video> */}
                 <Section1 />
               </div>
-              <div className="section">
+              <div className="section" style={{width:"98%"}}>
                 <Projects />
               </div>
               <div className="section">
-                <Awards />
+              <Stacks />
               </div>
               <div className="section">
-                <Stacks />
+              <Awards />
               </div>
               <div className="section">
                 <div>
@@ -149,10 +119,9 @@ function App() {
                   </Typography>
                 </Button>
                   </div>
-                  
                 </div>
-                
               </div>
+              
             </div>
           );
         }}
