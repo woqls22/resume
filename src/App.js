@@ -16,11 +16,11 @@ import DocumentSlider from "./DocumentSlider";
 import profilePic from "../src/resources/45088482.png";
 import "fullpage.js/vendors/scrolloverflow"; // Optional. When using scrollOverflow:true
 import ReactFullpage from "@fullpage/react-fullpage";
-import Section1 from "./section1"
+import Section1 from "./section1";
 import Projects from "./Project";
-import Awards from "./awards"
+import Awards from "./awards";
 import Stacks from "./stacks";
-import videobg1 from "../src/resources/Network.mp4"
+import videobg1 from "../src/resources/Network.mp4";
 import { Height } from "@material-ui/icons";
 function App() {
   const scrollToSummary = (event) => {
@@ -90,53 +90,78 @@ function App() {
           </Button>
         </div>
       </div> */}
-    <ReactFullpage
-      sectionsColor={["rgb(0,0,0,0)", "#171616", "#171616","#171616","#171616"]}
-      render={({ state, fullpageApi }) => {
-        return (
-          <div id="fullpage-wrapper">
-            <div className="section section1" id="introduce">
-            {/* <video  autoPlay={true} loop={true} muted={true} playsInline={true}>
+      <ReactFullpage
+        sectionsColor={[
+          "rgb(0,0,0,0)",
+          "#171616",
+          "#171616",
+          "#171616",
+          "#171616",
+        ]}
+        render={({ state, fullpageApi }) => {
+          return (
+            <div id="fullpage-wrapper">
+              <div className="section section1" id="introduce">
+                {/* <video  autoPlay={true} loop={true} muted={true} playsInline={true}>
               <source src={videobg1} type="video/mp4"/>
             </video> */}
-            <Section1/>
-
+                <Section1 />
+              </div>
+              <div className="section">
+                <Projects />
+              </div>
+              <div className="section">
+                <Awards />
+              </div>
+              <div className="section">
+                <Stacks />
+              </div>
+              <div className="section">
+                <div>
+                  <Typography
+                    style={{
+                      fontSize: "2.5rem",
+                      textAlign: "left",
+                      marginTop: "1rem",
+                      marginLeft: "5.5rem",
+                      color: "#FFFFFF",
+                    }}
+                    variant="h4"
+                  >
+                    <strong>D</strong>OCUMENT
+                  </Typography>
+                </div>
+                <div>
+                  <DocumentSlider />
+                  <div style={{float:"right", marginRight:"10rem", marginLeft:"auto"}}>
+                  <Button onClick={() => fullpageApi.moveTo(1, 0)}>
+                  <Typography
+                    style={{
+                      fontSize: "2.5rem",
+                      textAlign: "left",
+                      marginTop: "1rem",
+                      marginLeft: "5.5rem",
+                      color: "#FFFFFF",
+                    }}
+                    variant="h4"
+                  >
+                    <strong>M</strong>ove{" "}Top
+                  </Typography>
+                </Button>
+                  </div>
+                  
+                </div>
+                
+              </div>
             </div>
-            <div className="section">
-              <Projects/>
-            </div>
-            <div className="section">
-              <Awards/>
-              {/* <button onClick={() => fullpageApi.moveTo(1, 0)}>
-                Move top
-              </button> */}
-            </div>
-            <div className="section">
-              <Stacks/>
-            </div>
-            <div className="section">
-          <div>
-            <Typography style={{fontSize:"2.5rem", textAlign:"left", marginTop:"1rem",marginLeft:"5.5rem", color:"#FFFFFF"}} variant="h4">
-          <strong>D</strong>OCUMENT
-        </Typography>
-          </div>
-        <div>
-          <DocumentSlider />
-        </div>
-            </div>
-          </div>
-        );
-      }}
-    />
+          );
+        }}
+      />
     </>
   );
   return (
     <>
-      <div className="ProjectCell3">
-       
-
-       
-      </div>
+      <div className="ProjectCell3"></div>
     </>
   );
 }

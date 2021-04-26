@@ -14,8 +14,7 @@ import DialogActions from "@material-ui/core/DialogActions";
 const useStyles = makeStyles({
   root: {
     minWidth: 275,
-    minHeight:566,
-    marginTop:"-3rem"
+    minHeight:550,
   },
   bullet: {
     display: 'inline-block',
