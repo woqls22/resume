@@ -22,7 +22,7 @@ return(
             <strong>A</strong>WARDS
           </Typography>
           <TableContainer
-            style={{ maxWidth: "94%", height: "fit-content", marginTop: "1rem" }}
+            style={{ maxWidth: "94%", height: "100%", marginTop: "1rem" }}
             component={Paper}
           >
             <Table size="small">
@@ -59,7 +59,11 @@ return(
               </TableRow>
             </Table>
           </TableContainer>
+          <div style={{marginTop:"4%", marginLeft:"0.5rem", marginRight:"8.5rem", marginBottom:"-24rem",textAlign:"right"}}>
+        <img src={"https://png2.cleanpng.com/sh/debe43919ec118d7159d88f22a9dfbfa/L0KzQYm3VsEzN6pmkZH0aYP2gLBuTf5ifJp0htN1LXbsfL60ggdiepV4RdD4bXnxccXwjB4ufpDue9c2b4bogn7smPNmdJ1qRdp4bnB1ccPCTgRqfJ1qRadrMXblR4qCUBQ4O2Y7RqMCOEW8Qoq7UcUzQGk1TaQCM0K4QYi1kP5o/kisspng-national-film-awards-nomination-voice-over-excelle-honorary-title-5b1fb7993d7356.1785929415288052732517.png"} alt="project"  width="500" height="500" />
+        </div>
           </div>
+       
   </>
   );
 }

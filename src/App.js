@@ -20,6 +20,7 @@ import Section1 from "./section1";
 import Projects from "./Project";
 import Awards from "./awards";
 import Stacks from "./stacks";
+import MobileFirst from"./MobileFirst";
 import videobg1 from "../src/resources/Network.mp4";
 import { Height } from "@material-ui/icons";
 function App() {
@@ -54,83 +55,120 @@ function App() {
     });
     console.log("move to 0,0");
   };
-  const anchors = ["Summary", "Projects", "Stacks","Awards","Document"];
+  const anchors = ["Summary", "Projects", "Stacks", "Awards", "Document"];
   return (
     <>
-      <ReactFullpage
-        sectionsColor={[
-          "rgb(0,0,0,0)",
-          "#171616",
-          "#171616",
-          "#171616",
-          "#171616",
-        ]}
-        anchors={anchors}
-        navigation
-        navigationTooltips={anchors}
-        render={({ state, fullpageApi }) => {
-          return (
-            <div id="fullpage-wrapper" style={{backgroundColor:"#171616"}}>
-              <div className="section section1" id="introduce">
-                {/* <video  autoPlay={true} loop={true} muted={true} playsInline={true}>
+      {console.log(window.innerWidth)}
+      {window.innerWidth > 500 ? (
+        <>
+          <ReactFullpage
+            sectionsColor={[
+              "rgb(0,0,0,0)",
+              "#171616",
+              "#171616",
+              "#171616",
+              "#171616",
+            ]}
+            anchors={anchors}
+            navigation
+            navigationTooltips={anchors}
+            render={({ state, fullpageApi }) => {
+              return (
+                <div
+                  id="fullpage-wrapper"
+                  style={{ backgroundColor: "#171616" }}
+                >
+                  <div className="section section1" id="introduce">
+                    {/* <video  autoPlay={true} loop={true} muted={true} playsInline={true}>
               <source src={videobg1} type="video/mp4"/>
             </video> */}
-                <Section1 />
-              </div>
-              <div className="section" style={{width:"98%", display:"flex"}}>
-                <Projects />
-              </div>
-              <div className="section">
-              <Stacks />
-              </div>
-              <div className="section">
-              <Awards />
-              </div>
-              <div className="section">
-                <div>
-                  <Typography
-                    style={{
-                      fontSize: "2.5rem",
-                      textAlign: "left",
-                      marginTop: "1rem",
-                      marginLeft: "5.5rem",
-                      color: "#FFFFFF",
-                    }}
-                    variant="h4"
+                    <Section1 />
+                  </div>
+                  <div
+                    className="section"
+                    style={{ width: "98%", display: "flex" }}
                   >
-                    <strong>D</strong>OCUMENT
-                  </Typography>
-                </div>
-                <div>
-                  <DocumentSlider />
-                  <div style={{float:"right", marginRight:"10rem", marginLeft:"auto"}}>
-                  <Button onClick={() => fullpageApi.moveTo(1, 0)}>
-                  <Typography
-                    style={{
-                      fontSize: "2.5rem",
-                      textAlign: "left",
-                      marginTop: "1rem",
-                      marginLeft: "5.5rem",
-                      color: "#FFFFFF",
-                    }}
-                    variant="h4"
-                  >
-                    <strong>M</strong>ove{" "}Top
-                  </Typography>
-                </Button>
+                    <Projects />
+                  </div>
+                  <div className="section">
+                    <Stacks />
+                  </div>
+                  <div className="section">
+                    <Awards />
+                  </div>
+                  <div className="section">
+                    <div>
+                      <Typography
+                        style={{
+                          fontSize: "2.5rem",
+                          textAlign: "left",
+                          marginTop: "1rem",
+                          marginLeft: "5.5rem",
+                          color: "#FFFFFF",
+                        }}
+                        variant="h4"
+                      >
+                        <strong>D</strong>OCUMENT
+                      </Typography>
+                    </div>
+                    <div>
+                      <DocumentSlider />
+                      <div
+                        style={{
+                          float: "right",
+                          marginRight: "10rem",
+                          marginLeft: "auto",
+                        }}
+                      >
+                        <Button onClick={() => fullpageApi.moveTo(1, 0)}>
+                          <Typography
+                            style={{
+                              fontSize: "2.5rem",
+                              textAlign: "left",
+                              marginTop: "1rem",
+                              marginLeft: "5.5rem",
+                              color: "#FFFFFF",
+                            }}
+                            variant="h4"
+                          >
+                            <strong>M</strong>ove Top
+                          </Typography>
+                        </Button>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              
-            </div>
-          );
-        }}
-      />
-    </>
-  );
-  return (
-    <>
-      <div className="ProjectCell3"></div>
+              );
+            }}
+          />
+        </>
+      ) : (
+        <>
+          <ReactFullpage
+            anchors={anchors}
+            navigation
+            navigationTooltips={anchors}
+            sectionsColor={["#282c34", "#ff5f45", "#0798ec"]}
+            onLeave={(origin, destination, direction) => {
+              console.log("onLeave event", { origin, destination, direction });
+            }}
+            render={({ state, fullpageApi }) => {
+              console.log("render prop change", state, fullpageApi); // eslint-disable-line no-console
+              return (
+                <div>
+                  <MobileFirst/>
+                  <div className="section" style={{ color: "#FFFFFF" }}>
+                    <h3>개발자 이재빈 입니다.</h3>
+                  </div>
+                  <div className="section" style={{ color: "#FFFFFF" }}>
+                    <h3>개발자 이재빈 입니다.</h3>
+                  </div>
+                </div>
+              );
+            }}
+          />
+        </>
+      )}
     </>
   );
 }

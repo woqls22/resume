@@ -6,9 +6,10 @@
   background-position: left left; */
   height: 100%;
   padding: 10rem 4rem;
-  padding-right: auto;
+  margin-right: 3rem;
   padding-left: auto;
-  text-align: center;
+  text-align: right;
+
 }
 #introduce{
   background-image: url('https://user-images.githubusercontent.com/6901805/58038897-167f0280-7ae6-11e9-94eb-88e880a25f0f.gif');
@@ -116,3 +117,4 @@
   padding: none;
   position: fixed; /* optional depending on what you want to do in your app */
   }
+
