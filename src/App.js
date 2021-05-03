@@ -23,6 +23,7 @@ import Stacks from "./stacks";
 import MobileFirst from"./MobileFirst";
 import videobg1 from "../src/resources/Network.mp4";
 import { Height } from "@material-ui/icons";
+import MobileSecond from "./MobileSecond";
 function App() {
   const scrollToSummary = (event) => {
     window.scrollTo({
@@ -157,9 +158,7 @@ function App() {
               return (
                 <div>
                   <MobileFirst/>
-                  <div className="section" style={{ color: "#FFFFFF" }}>
-                    <h3>개발자 이재빈 입니다.</h3>
-                  </div>
+                  <MobileSecond/>
                   <div className="section" style={{ color: "#FFFFFF" }}>
                     <h3>개발자 이재빈 입니다.</h3>
                   </div>
