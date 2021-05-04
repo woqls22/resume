@@ -1,11 +1,8 @@
-import React from 'react';
+import React from "react";
 import "./App.css";
-import {
-  Paper,
-  Typography,
-} from "@material-ui/core";
-import "fullpage.js/vendors/scrolloverflow"; // Optional. When using scrollOverflow:true
-import "./App.css";
+import { Paper, Typography, Button } from "@material-ui/core";
+import "fullpage.js/vendors/scrolloverflow";
+import FindInPageIcon from "@material-ui/icons/FindInPage";
 import {
   Table,
   TableRow,
@@ -13,22 +10,38 @@ import {
   TableHead,
   TableContainer,
 } from "@material-ui/core";
-import "fullpage.js/vendors/scrolloverflow"; // Optional. When using scrollOverflow:true
-export default function Awards(){
-return(
-<>
-    <div className="ProjectCell3"  style={{fontSize:"2.5rem", textAlign:"left", marginTop:"-20rem", color:"#FFFFFF"}}>
-          <Typography variant="h4">
-            <strong>A</strong>WARDS
-          </Typography>
-          <TableContainer
-            style={{ maxWidth: "94%", height: "100%", marginTop: "1rem" }}
-            component={Paper}
-          >
-            <Table size="small">
+import Dialog from "@material-ui/core/Dialog";
+import DialogActions from "@material-ui/core/DialogActions";
+import DialogContent from "@material-ui/core/DialogContent";
+import DialogContentText from "@material-ui/core/DialogContentText";
+import DialogTitle from "@material-ui/core/DialogTitle";
+import { useState } from "react";
+import { makeStyles } from '@material-ui/core/styles';
+const useStyles = makeStyles({
+    table: {
+      width:820
+    },
+  });
+export default function MobileThird() {
+    const classes = useStyles();
+  return (
+    <div
+      className="section"
+      style={{
+        color: "#FFFFFF",
+        textAlign: "left top",
+        paddingLeft: "1rem",
+        backgroundRepeat: "no-repeat",
+        backgroundImage: `url("https://cdn.shopify.com/s/files/1/0689/4173/products/diagonal_marble_3_wallpaper_square_web__21327.1559316435_1024x1024.jpg?v=1615776803")`,
+        fontSize: "1.2rem",
+      }}
+    >
+      <h3>Awards</h3>
+      <div style={{ marginRight: "1rem", paddingBottom: "5rem", overflowX:"auto"}}>
+        <TableContainer style={{ marginTop: "1rem", overflowX:"auto" }} component={Paper}>
+        <Table className={classes.table}>
               <TableHead>
                 <TableRow>
-                  <TableCell align="center">구분</TableCell>
                   <TableCell align="center">대회명</TableCell>
                   <TableCell align="center">주관</TableCell>
                   <TableCell align="center">수상명</TableCell>
@@ -37,7 +50,6 @@ return(
                 </TableRow>
               </TableHead>
               <TableRow hover={true}>
-                <TableCell align="center">1</TableCell>
                 <TableCell align="center">제 8회 핀테크 해커톤</TableCell>
                 <TableCell align="center">한국인터넷진흥원(KISA)</TableCell>
                 <TableCell align="center">우수상</TableCell>
@@ -47,7 +59,6 @@ return(
                 <TableCell align="center">2020.09.15</TableCell>
               </TableRow>
               <TableRow hover={true}>
-                <TableCell align="center">2</TableCell>
                 <TableCell align="center">2020 한국컴퓨터종합학술대회</TableCell>
                 <TableCell align="center">한국정보과학회</TableCell>
                 <TableCell align="center">우수논문상</TableCell>
@@ -58,11 +69,8 @@ return(
                 <TableCell align="center">2020.07</TableCell>
               </TableRow>
             </Table>
-          </TableContainer>
-          <div style={{marginTop:"4%", marginLeft:"0.5rem", marginRight:"8.5rem", marginBottom:"-24rem",textAlign:"right"}}>
-        </div>
-          </div>
-       
-  </>
+        </TableContainer>
+      </div>
+    </div>
   );
 }
